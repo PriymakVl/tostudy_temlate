@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tostudy | Панель управления</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+    <link rel="stylesheet" href="./css/datatables.css" />
+</head>
+
+<body id="page">
+    <section id="main">
+        <header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+        <div id="wrap-content">
+            <div class="header">
+                <h1>Курсы</h1>
+                <a href="./course_edit.php" class="button">Новый курс</a>
+            </div>
+            <div id="content">
+                <table id="js-data-table" class="data-table js-table4">
+                    <thead class="head">
+                        <tr>
+                            <th class="column">ID курса</th>
+                            <th class="column">Название курса</th>
+                            <th class="column">ID школы</th>
+                            <th class="column">Название школы</th>
+                            <th class="column">Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="js-item1">
+                            <td class="column">1</td>
+                            <td class="column">Business Spanish Course 30</td>
+                            <td class="column"></td>
+                            <td class="column"></td>
+                            <td class="column">
+                                <a href="./course_edit.php?id=1&act=edit" class="icon2">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="icon2 js-course-delete" data-id="1">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr id="js-item2">
+                            <td class="column">2</td>
+                            <td class="column">Part time spanish course</td>
+                            <td class="column"></td>
+                            <td class="column"></td>
+                            <td class="column">
+                                <a href="./course_edit.php?id=2&act=edit" class="icon2">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="icon2 js-course-delete" data-id="2">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr id="js-item3">
+                            <td class="column">3</td>
+                            <td class="column">Intensive Course 30</td>
+                            <td class="column"></td>
+                            <td class="column"></td>
+                            <td class="column">
+                                <a href="./course_edit.php?id=3&act=edit" class="icon2">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="icon2 js-course-delete" data-id="3">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 1000">
+                                        <path
+                                            d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div> <!-- /#content -->
+        </div> <!-- /#wrap-content -->
+
+        <footer id="footer">© Панель управления</footer>
+        
+    </section> <!-- END id="main" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="./js/datatables.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

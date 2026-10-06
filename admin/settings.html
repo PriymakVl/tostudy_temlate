@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>tostudy | Панель управления</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+	<link rel="stylesheet" href="./css/datatables.css" />
+</head>
+
+<body id="page">
+	<section id="main">
+		<header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+		<div id="wrap-content" class="settings">
+			<div class="header">
+				<h1>Настройки</h1>
+			</div>
+			<div class="content content-form fs-input fs-form">
+
+				<div class="input">
+					<label class="input__label">Title (тег)</label>
+					<input class="input__field" type="text" id="js-meta-title"
+						value="Контакты | Tostudy | Образование за рубежом">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Description (метатег)</label>
+					<input class="input__field" type="text" id="js-meta-description"
+						value="Tostudy - агентство по образованию за рубежом и обучению за границей">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Keywords (метатег)</label>
+					<input class="input__field" type="text" id="js-meta-keywords"
+						value="Обучение за границей, образование за рубежом, Tostudy, контакты, Тустади">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Телефон (WhatsApp)</label>
+					<input class="input__field" type="text" id="js-tel" value="+34643356387">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Email</label>
+					<input class="input__field" type="text" id="js-email" value="info@tostudy.pro">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Facebook</label>
+					<input class="input__field" type="text" id="js-facebook" value="tostudy">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Instagram</label>
+					<input class="input__field" type="text" id="js-instagram" value="tostudy">
+				</div>
+
+				<div class="input">
+					<label class="input__label">ВКонтакте</label>
+					<input class="input__field" type="text" id="js-vk" value="tostudy">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Однокласники</label>
+					<input class="input__field" type="text" id="js-ok" value="tostudy">
+				</div>
+
+				<div class="input">
+					<label class="input__label">Telegram</label>
+					<input class="input__field" type="text" id="js-telegram" value="tostudy">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Адрес</div>
+						<div class="language en">en</div>
+					</label>
+					<textarea class="input__field input__text"
+						id="js-address-en">46006, Spain, Valencia,Plus Ultra street, 1</textarea>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Адрес</div>
+						<div class="language es">es</div>
+					</label>
+					<textarea class="input__field input__text"
+						id="js-address-es">46006, España, Valencia, calle Plus Ultra, 1</textarea>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Адрес</div>
+						<div class="language ua">ua</div>
+					</label>
+					<textarea class="input__field input__text"
+						id="js-address-ua">46006, España, Valencia, calle Plus Ultra, 1</textarea>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Адрес</div>
+						<div class="language ru">ru</div>
+					</label>
+					<textarea class="input__field input__text"
+						id="js-address-ru">46006, España, Valencia, calle Plus Ultra, 1</textarea>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Адрес</div>
+						<div class="language cn">cn</div>
+					</label>
+					<textarea class="input__field input__text" id="js-address-cn"></textarea>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>График работы</div>
+						<div class="language en">en</div>
+					</label>
+					<input class="input__field" type="text" id="js-schedule-en" value="Every day from 10.00 to 21.00">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>График работы</div>
+						<div class="language es">es</div>
+					</label>
+					<input class="input__field" type="text" id="js-schedule-es"
+						value="De lunes a domingo de 10.00 a 21.00">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>График работы</div>
+						<div class="language ua">ua</div>
+					</label>
+					<input class="input__field" type="text" id="js-schedule-ua"
+						value="Кожен день без перерви та вихідних з 10.00 до 21.00">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>График работы</div>
+						<div class="language ru">ru</div>
+					</label>
+					<input class="input__field" type="text" id="js-schedule-ru"
+						value="Ежедневно с 10:00 до 21:00 (без перерыва и выходных)">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>График работы</div>
+						<div class="language cn">cn</div>
+					</label>
+					<input class="input__field" type="text" id="js-schedule-cn" value="">
+				</div>
+
+				<div class="action">
+					<a href="#" class="button" id="js-settings-save">Сохранить</a>
+				</div>
+
+			</div> <!-- END class="content" -->
+		</div> <!-- END id="wrap-content" -->
+
+		<footer id="footer">© Панель управления</footer>
+	</section> <!-- END id="main" -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="./js/datatables.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

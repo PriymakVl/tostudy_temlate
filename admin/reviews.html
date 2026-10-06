@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>tostudy | Панель управления</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+	<link rel="stylesheet" href="./css/datatables.css" />
+</head>
+
+<body id="page">
+	<section id="main">
+		<header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+		<div id="wrap-content">
+			<div class="header">
+				<h1>Отзывы постоянных клиентов</h1>
+				<a href="#" class="button js-open-modal" data-modal-id="#js-client-add-modal">Новый отзыв</a>
+			</div>
+			<div id="content">
+				<table id="js-data-table" class="data-table js-table6">
+					<thead class="head">
+						<tr>
+							<th class="column">ID отзыва</th>
+							<th class="column">Имя</th>
+							<th class="column">Отзыв</th>
+							<th class="column">Показывать</th>
+							<th class="column">На главной</th>
+							<th class="column">Действие</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="js-item1">
+							<td class="column">1</td>
+							<td class="column">Сергей, Республика Беларусь</td>
+							<td class="column">
+								<div class="description">
+									<p>Скажу честно, менеджеры, работающие в «TOSTUDY» - специалисты с большой буквы.
+										Оформление визы (подбор, обработка документов), написание резюме, всё прошло на
+										100%. Я считаю, что это высокий показатель работы. Особую благодарность наша
+										семья выражает Елене. За её отзывчивость. Когда возникали какие-то
+										непредвиденные ситуации, она быстро их решала. Мы получили скидку на языковые
+										курсы 8%, что не может нас не радовать. Оказалось, что через сервер заказывать
+										действительно намного дешевле. Огромное Вам спасибо!!!</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="1"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="1"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="1"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="1"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="1">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="1">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item2">
+							<td class="column">2</td>
+							<td class="column">Никита, Россия</td>
+							<td class="column">
+								<div class="description">
+									<p>«TOSTUDY» - хорошая компания, ее сотрудники помогли нам с подбором языковых
+										курсов в Испании для дочери.<br> Очень мне понравилось, как консультировали нас,
+										отвечали на вопросы вежливо, подробно и абсолютно бесплатно! Поэтому могу
+										спокойно советовать эту компанию. Еще и скидку дали 8% от официальной стоимости
+										курсов на сайте школы, а это была существенная сумма.</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="2"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="2"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="2"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="2"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="2">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="2">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item3">
+							<td class="column">3</td>
+							<td class="column">Алексей, Россия</td>
+							<td class="column">
+								<div class="description">
+									<p>Хочу выразить огромную благодарность компании «TOSTUDY». Покупал годовой языковой
+										курс испанского языка в городе Валенсия. Возникало много вопросов, но сотрудники
+										компании быстро и оперативно на них отвечали. Грамотный специалист Елена,
+										рассказала, как проходит процесс обучения, сколько добираться до школы по
+										времени, какие документы для успешной подачи на визу мне нужны. И все это
+										абсолютно бесплатно!!! Плюс ко всему я получил скидку 8% от официальной
+										стоимости курса на сайте школы!!! Меня это очень порадовало!!! Спасибо!</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="3"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="3"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="3"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="3"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="3">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="3">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item4">
+							<td class="column">4</td>
+							<td class="column">Оксана, Украина</td>
+							<td class="column">
+								<div class="description">
+									<p>Я давно мечтала учиться в Канаде. Решила обратиться в фирму «TOSTUDY» и поняла,
+										что это был самый правильный шаг в моей ситуации! <br>Сотрудники этой фирмы
+										описали наиболее удобный вариант моего обучения пошагово, изучили мои проблемы,
+										дали дельные советы. Я была окрылена той мыслью, что моя мечта может вскоре
+										осуществиться, т.к. все говорили, что молодой незамужней девушке получить визу в
+										Канаду крайне сложно из-за строгой иммиграционной политики!<br>Мы начали работу.
+										И вот я в Канаде, как и мечтала!!! Я не жалею ни на одну секунду о выборе данной
+										компании в качестве помощника по вопросу обучения за рубежом! Огромное спасибо
+										Елене и Ирине за индивидуальный и чуткий подход! Благодаря вам я смогла
+										осуществить свою мечту!</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="4"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="4"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="4"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="4"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="4">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="4">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item5">
+							<td class="column">5</td>
+							<td class="column">Алина, Россия</td>
+							<td class="column">
+								<div class="description">
+									<p>Хочу поблагодарить вас еще раз за проделанную работу. Весь процесс подготовки
+										оказался приятным, понятным и спокойным. Я реализовала свою мечту - живу и учусь
+										в Барселоне, чему не устаю радоваться. Конечно, за каждым проектом стоят люди.
+										Спасибо вам, Ирина и Елена за помощь и так держать!</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="5"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="5"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="5"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="5"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="5">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="5">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item6">
+							<td class="column">6</td>
+							<td class="column">Alex, Spain</td>
+							<td class="column">
+								<div class="description">
+									<p>I studied in UK (London) three months and I enjoyed that time so much. It was
+										marvelous experience and perfect opportunity to have a perfect command of
+										Inglish, to meet new friends from different countries and to have more prospects
+										of getting a good job in the future. I highly recommend this portal. Profitable,
+										reliable, easy</p>
+								</div>
+							</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="3" data-id="6"
+											data-action="reviews">да</a>
+										<a href="#" class="js-status" data-status="0" data-id="6"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column" data-order="1">
+								<div class="select ok js-open-form-select js-open-home-page">
+									<span>да</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-home-page" data-status="1" data-id="6"
+											data-action="reviews">да</a>
+										<a href="#" class="js-home-page" data-status="0" data-id="6"
+											data-action="reviews">нет</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-client-edit" data-id="6">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,418.3v462.8C990,941,941,990,881.1,990H118.9C59,990,10,941,10,881.1V118.9C10,59,59,10,118.9,10h462.7v40.8H130.3c-54.9,0-79.4,24.5-79.4,79.4v739.6c0,54.9,24.5,79.4,79.4,79.4h739.5c54.9,0,79.4-24.5,79.4-79.4V418.3H990z M882.7,59.5l57.7,57.7c15.9,15.9,15.9,41.8,0,57.7l-28.9,28.9L367.2,748.2v0H251.7V632.8L796.1,88.4l0,0L825,59.5C840.9,43.6,866.8,43.6,882.7,59.5z M796.1,146.1L295,647.2l-2,59.7l59.7-2v0l501.1-501L796.1,146.1z M853.8,88.4L825,117.2l57.8,57.8l28.9-28.9L853.8,88.4z" />
+									</svg>
+								</a>
+								<a href="#" class="icon2 js-client-delete" data-id="6">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<path
+											d="M990,213.3H826.7v714.5c0,22.6-18.3,40.9-40.9,40.9H214.2c-22.5,0-40.9-18.3-40.9-40.9V213.3H10v-39.1h285.8V72.1c0-22.6,18.3-40.8,40.9-40.8h326.6c22.5,0,40.9,18.3,40.9,40.8v102.1H990V213.3z M664.3,92c0-11.3-9.1-20.4-20.4-20.4H357.1c-11.3,0-20.4,9.1-20.4,20.4v82.2h327.6V92z M785.8,213.3H214.2v694.1c0,11.3,9.1,20.4,20.4,20.4h530.9c11.2,0,20.4-9.1,20.4-20.4V213.3z M581.7,376.6h40.8v387.9h-40.8V376.6z M377.5,376.6h40.8v387.9h-40.8V376.6z" />
+									</svg>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- /#content -->
+		</div> <!-- /#wrap-content -->
+
+		<div id="js-client-add-modal" class="fs-box fs-box1">
+			<section>
+				<div class="fs-form js-form">
+					<header class="header">
+						<h3>Новый отзыв</h3>
+						<i class="fa fa-close fs-close js-close" data-modal-id="#js-client-add-modal"></i>
+					</header>
+					<div class="fs-input">
+						<div class="input">
+							<label class="input__label">Имя</label>
+							<input class="input__field js-key" type="text" id="js-username-new">
+						</div>
+						<div class="input">
+							<label class="input__label">Отзыв</label>
+							<textarea class="input__field input__text" id="js-comment-new"></textarea>
+						</div>
+					</div> <!-- /.fs-input -->
+					<div class="action">
+						<a href="#" class="button" id="js-client-add">Добавить</a>
+					</div>
+				</div>
+			</section>
+		</div> <!-- END id="js-client-add-modal" -->
+
+		<div id="js-client-edit-modal" class="fs-box fs-box1">
+			<section>
+				<div class="fs-form js-form">
+					<header class="header">
+						<h3>Редактирование отзыва</h3>
+						<i class="fa fa-close fs-close js-close" data-modal-id="#js-client-edit-modal"></i>
+					</header>
+					<div class="fs-input">
+						<div class="input">
+							<label class="input__label">Имя</label>
+							<input class="input__field" type="text" id="js-username-edit">
+						</div>
+						<div class="input">
+							<label class="input__label">Отзыв</label>
+							<textarea class="input__field input__text" id="js-comment-edit"></textarea>
+						</div>
+					</div> <!-- /.fs-input -->
+					<div class="action">
+						<a href="#" class="button" id="js-client-save">Сохранить</a>
+					</div>
+				</div>
+			</section>
+		</div> <!-- END id="js-client-edit-modal" -->
+
+		<footer id="footer">© Панель управления</footer>
+	</section> <!-- END id="main" -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="./js/datatables.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

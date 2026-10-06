@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tostudy | Панель управления</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+    <link rel="stylesheet" href="./css/datatables.css" />
+</head>
+
+<body id="page">
+    <section id="main">
+        <header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+        <div id="wrap-content">
+            <div class="header">
+                <h1>Обратная связь</h1>
+            </div>
+            <div id="content">
+                <table id="js-data-table" class="data-table js-table3">
+                    <thead class="head">
+                        <tr>
+                            <th class="column">ID заявки</th>
+                            <th class="column">Имя</th>
+                            <th class="column">Email</th>
+                            <th class="column">Текст сообщения</th>
+                            <th class="column">Дата добавления</th>
+                            <th class="column">Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="js-item6">
+                            <td class="column">6</td>
+                            <td class="column">Катя В.</td>
+                            <td class="column">kat@gmail.com</td>
+                            <td class="column">test</td>
+                            <td class="column" data-order="2019-06-25 18:33:36">25 июня в 18:33</td>
+                            <td class="column" data-order="4">
+                                <div class="select ok js-open-form-select js-open-status">
+                                    <span>обработано</span>
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+                                            fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div class="options options2 js-form-select">
+                                        <a href="#" class="js-status" data-status="1" data-id="6"
+                                            data-action="feedback">ожидание</a>
+                                        <a href="#" class="js-status" data-status="4" data-id="6"
+                                            data-action="feedback">обработано</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- /#content -->
+        </div> <!-- /#wrap-content -->
+
+        <footer id="footer">© Панель управления</footer>
+    </section> <!-- END id="main" -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="./js/datatables.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

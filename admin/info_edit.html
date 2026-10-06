@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>tostudy | Панель управления</title>
+	<link rel="stylesheet" href="./css_a/style.css" />
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/froala_editor.css">
+	<link rel="stylesheet" href="./css/froala_style.css">
+	<link rel="stylesheet" href="./css/plugins/image.css">
+	<link rel="stylesheet" href="./css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="./css/plugins/quick_insert.css">
+	<link rel="stylesheet" href="./css/plugins/video.css">
+</head>
+
+<body id="page">
+	<section id="main">
+		<header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+		<div id="wrap-content" class="settings">
+			<div class="header">
+				<a href="./info.php">
+					<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"
+						fill="#8A73E5">
+						<path
+							d="M500,10C229.4,10,10,229.4,10,500c0,270.6,219.4,490,490,490c270.6,0,490-219.4,490-490C990,229.4,770.6,10,500,10z M500,952.5C250.1,952.5,47.5,749.9,47.5,500C47.5,250.1,250.1,47.5,500,47.5c243.6,0,442.2,192.5,452.1,433.6H432.6l156.5-156.5c7.4-7.4,7.4-19.4,0-26.8c-7.4-7.4-19.4-7.4-26.8,0L373.8,486.3c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.2,0.2-0.3,0.3c-7.4,7.4-7.4,19.4,0,26.8l188.5,188.5c7.4,7.4,19.4,7.4,26.8,0c7.4-7.4,7.4-19.4,0-26.8L432,518.8h520.1C942.2,760,743.6,952.5,500,952.5z" />
+					</svg>
+				</a>
+				<h1>Редактирование статьи на странице "полезная информация"</h1>
+			</div>
+			<div class="content content-form fs-input fs-form">
+
+				<div class="input">
+					<label class="input__label">Страна</label>
+					<div class="input__field input__select js-open-form-select" id="js-country-select" data-value="16">
+						<span>Мальта</span>
+						<div class="button-group button-group2 js-form-select"><a href="#" class="js-option"
+								data-value="23">Австралия</a><a href="#" class="js-option"
+								data-value="12">Великобритания</a><a href="#" class="js-option"
+								data-value="15">Германия</a><a href="#" class="js-option" data-value="21">Ирландия</a><a
+								href="#" class="js-option" data-value="1">Испания</a><a href="#" class="js-option"
+								data-value="10">Италия</a><a href="#" class="js-option" data-value="14">Канада</a><a
+								href="#" class="js-option" data-value="20">Китай</a><a href="#" class="js-option"
+								data-value="16">Мальта</a><a href="#" class="js-option" data-value="26">Новая
+								Зеландия</a><a href="#" class="js-option" data-value="11">США</a><a href="#"
+								class="js-option" data-value="18">Франция</a><a href="#" class="js-option"
+								data-value="22">Чехия</a><a href="#" class="js-option" data-value="25">Швейцария</a>
+						</div>
+					</div>
+				</div> <!-- /.input -->
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Название</div>
+						<div class="language en">en</div>
+					</label>
+					<input class="input__field" type="text" id="js-title-en" value="Visa to Malta">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Название</div>
+						<div class="language es">es</div>
+					</label>
+					<input class="input__field" type="text" id="js-title-es" value="Visa de Malta">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Название</div>
+						<div class="language ua">ua</div>
+					</label>
+					<input class="input__field" type="text" id="js-title-ua" value="">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Название</div>
+						<div class="language ru">ru</div>
+					</label>
+					<input class="input__field" type="text" id="js-title-ru" value="Виза на Мальту">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Название</div>
+						<div class="language cn">cn</div>
+					</label>
+					<input class="input__field" type="text" id="js-title-cn" value="">
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Описание</div>
+						<div class="language en">en</div>
+					</label>
+					<div class="fs-editor" id="js-text-en">
+						<p>So, you have been accepted to study in Malta - congratulations! Now what? Before you pack
+							your sunscreen, it's time to deal with your visa and residence permit.</p>
+						<h2>TYPES OF STUDY VISAS TO MALTA:</h2>
+						<ul>
+							<li>Short-term student visa to Malta</li>
+						</ul>
+						<p>It is issued for applicants who want to take <a
+								href="https://tostudy.pro/cities.php?id=16">English language courses</a> or other
+							programs that last no more than 90 calendar days.</p>
+						<p>Citizens of non-EU countries who attend the program for a maximum of 90 days must obtain a
+							Schengen short-stay visa (C-Visa).</p>
+						<p>The applicant must submit their application at one of the nearby consular offices.</p>
+						<p>Together with the application for a visa to Malta, the applicant provides their biometric
+							data.</p>
+						<p>If approved, the Malta visa is issued for the entire program plus a 7-day grace period,
+							provided that the total amount does not exceed 90 days.</p>
+						<p>The processing time For your visa application in Malta, from the date of submission to the
+							final decision, should not exceed 15 business days.</p>
+						<p>The above procedure, according to visa legislation, is not applicable to students who are
+							listed as visa-free citizens (EU and US countries).</p>
+						<ul>
+							<li>Long-term student visa to Malta</li>
+						</ul>
+						<p>A long-term d visa is required for students to study in Malta for a period of more than 90
+							calendar days. A visa is issued for 180 days with a further extension on the territory of
+							Malta.</p>
+						<h2>EXTENSION OF STAY</h2>
+						<ul>
+							<li>In all cases where the course exceeds 90 days, with the exception of higher education
+								programs, the further residence permit is extended on the national D-visa for a maximum
+								period of 365 days, counted from the initial date of entry into the Schengen area.</li>
+							<li>Applicants who require an additional residence permit in accordance with visa
+								requirements must contact CVU no earlier than 30 days and no later than 21 days before
+								the expiration of their visa validity period, and submit all necessary documents,
+								including a certificate of satisfactory academic performance and attendance.</li>
+							<li>If the duration of the study program exceeds 365 days and the applicant has already
+								exhausted the validity of the national visa, or if his / her stay in the Schengen area
+								has already exceeded 365 days, the student must apply for a residence permit to extend
+								the stay. Applicants contact the IMA (Identity Malta Agency) Department no earlier than
+								30 days and no later than 21 days before the expiry of their visa and submit all
+								necessary documents, including proof of satisfactory work and attendance.</li>
+							<li>Applicants (as defined in Supplementary legislation 217.22) who are enrolled in a higher
+								education program lasting more than 90 days must apply for a residence permit before the
+								expiration of their original residence permit. Applicants holding a visa in Malta need
+								to contact DCEA no earlier than 30 days and no later than 21 days before the expiration
+								date of their current permit and present all necessary documents, including proof of
+								satisfactory attendance, which must be 75%.</li>
+						</ul>
+						<h2>LIST OF DOCUMENTS:</h2>
+						<ul>
+							<li>Visa application form in English with the last passport-sized photo. Example of a visa
+								application form;</li>
+							<li>A valid passport that expires three or more months after the expiration of the visa term
+								and has at least three blank pages;</li>
+							<li>Proof of sufficient financial resources equivalent to 75% of the minimum wage in Malta
+								for each month of study. This is approximately € 48 / day or € 17,520 / year. Proof of
+								funds may include Bank statements for the past six months, a letter indicating financial
+								support from the sponsor (including proof of their funds) , and so on.;</li>
+							<li>Ticket (s) to the final destination with a return trip, in cases of short-term rates;
+							</li>
+							<li>Proof of accommodation during the course (hotel reservation, rental agreement);</li>
+							<li>Letter of sponsorship, including a copy of the identity document and contact details of
+								the sponsor, if the applicant is sponsored by a third party;</li>
+							<li>Proof of scholarship, if applicable;</li>
+							<li>Applicants who do not seek higher education must submit a letter of acceptance from a
+								local educational institution licensed by a national regulatory authority. For
+								programmes of study in Malta below MQF level 5 (anything other than higher education,
+								such as English language courses), documentation must include proof that the student
+								will attend a minimum of 15 hours per week, a copy of the class schedule for each month
+								of study.</li>
+							<li>Applicants seeking higher education must submit a letter of admission from a local
+								educational institution licensed by a national regulatory authority. The document must
+								contain evidence that 60 credit hours under the European credit transfer system (ECTS)
+								will be received by the student within a maximum of one year. The same proportion will
+								be applied to other credit systems. Applicants provide information about the schedule of
+								classes for each month of training.</li>
+							<li>Proof of sufficient language proficiency to be eligible to apply for the chosen course
+								of study;</li>
+							<li>Medical insurance for travel with a minimum coverage of 30,000 euros;</li>
+							<li>Medical insurance with full reimbursement from a recognized provider. The policy should
+								cover the entire duration of the course, not the validity of the visa originally issued
+								to the applicant;</li>
+							<li>Birth certificate / family book, in case of minors;</li>
+							<li>Permission of two parents or legal guardians, in the case of minors. The authorization
+								document must be properly authenticated. In case of any doubt, the Consul can always
+								request additional information or documents;</li>
+							<li>Passport data page for both parents or legal guardians, in the case of minors;</li>
+							<li>Certificate of tuition fees in Malta received by the educational institution in
+								connection with the applicant's course:</li>
+							<li>For courses up to 1000 euros, a receipt is requested to cover the full payment;</li>
+							<li>For courses that cost more than 1000 euros but less than 2500 euros, a receipt is
+								requested that covers up to 75% of the course;</li>
+							<li>For courses whose cost is equal to or exceeds 2500 euros, a receipt is requested that
+								covers up to 50% of the course;</li>
+							<li>Any additional documents that may be deemed necessary by the consular office.</li>
+						</ul>
+						<h2>RIGHT TO WORK</h2>
+						<p>Applicants who have a training program in Malta that lasts more than 90 days can apply for a
+							job. Jobsplus (employment Agency) provides access to work in certain sectors, you only need
+							to register and choose the job you are interested in. Students are allowed to work no more
+							than 20 hours a week after the first three months of study in Malta. These provisions may
+							change from time to time at the discretion of the Ministry responsible for Jobsplus.</p>
+						<p>Candidates who receive higher education at universities recognized by MQRIC are entitled to
+							work no more than 20 hours a week from the first year of study. To do this, the applicant
+							applies for a work permit after issuing a residence permit. It should also be noted that an
+							application for a work permit will be considered more favorable if the job offer is related
+							to the chosen training profession.</p>
+					</div>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Описание</div>
+						<div class="language es">es</div>
+					</label>
+					<div class="fs-editor" id="js-text-es">
+						<p>Entonces, fuiste aceptado para estudiar en Malta, ¡felicidades! ¿Y ahora qué? Antes de
+							empacar protector solar, es hora de lidiar con la Visa y el permiso de residencia.</p>
+						<h2>TIPOS DE VISAS DE MALTA PARA ESTUDIAR:</h2>
+						<ul>
+							<li>Visa de estudiante a corto plazo en Malta</li>
+						</ul>
+						<p>Se emite para los solicitantes de empleo que deseen tomar cursos de Inglés o otro programa,
+							que dura no más de 90 días calendario.</p>
+						<p>Los ciudadanos de países no pertenecientes a la UE que asistan a un programa de no más de 90
+							días deben obtener una Visa Schengen a corto plazo (C-Visa).</p>
+						<p>El solicitante debe presentar su solicitud en una de las oficinas consulares cercanas.</p>
+						<p>Junto con la solicitud de Visa de Malta, el solicitante proporciona sus datos biométricos.
+						</p>
+						<p>Si se aprueba, se otorga una Visa de Malta para todo el programa más un período de gracia de
+							7 días, siempre que el monto total no exceda los 90 días.</p>
+						<p>El tiempo de revisión de su solicitud de Visa de Malta, desde la fecha de presentación hasta
+							la decisión final, no debe exceder los 15 días hábiles.</p>
+						<p>El procedimiento anterior, de acuerdo con la ley de visas, no se aplica a los estudiantes que
+							figuran como ciudadanos exentos de Visa (países de la UE y los Estados Unidos).</p>
+						<ul>
+							<li>Visa de estudiante a largo plazo en Malta</li>
+						</ul>
+						<p>Los estudiantes necesitan una Visa D a largo plazo para estudiar en Malta, que dura más de 90
+							días naturales. Se expide una Visa de 180 días con una extensión adicional en el territorio
+							de Malta.</p>
+						<h2>EXTENSIÓN DE LA ESTANCIA</h2>
+						<ul>
+							<li>En todos los casos en que el curso supere los 90 días, con la excepción de los programas
+								de educación superior, el permiso de residencia adicional se extiende con una Visa D
+								nacional por un período máximo de 365 días, se considera desde la fecha inicial de
+								entrada al espacio Schengen.</li>
+							<li>Los solicitantes que requieren un permiso de residencia adicional según los requisitos
+								de Visa deben comunicarse con la CVU no antes de 30 días y no más tarde de 21 días antes
+								de que expire el término de validez de su Visa y presentar todos los documentos
+								necesarios, incluido un certificado de rendimiento y asistencia satisfactorios.</li>
+							<li>Si la Duración del programa de estudio supera los 365 días y el candidato ya ha agotado
+								la Visa nacional, o si su estadía en el área Schengen ya ha excedido los 365 días, el
+								estudiante debe solicitar un permiso de residencia para extender la estadía. Los
+								solicitantes se comunican con el Departamento de IMA (Identity Malta Agency) no antes de
+								30 días y no más tarde de 21 días antes de la fecha de vencimiento de su Visa y
+								presentar todos los documentos necesarios, incluida la evidencia de un trabajo
+								satisfactorio y asistencia.</li>
+							<li>Los solicitantes (como se define en la ley Complementaria 217.22) que estudian en un
+								programa de educación superior que dura más de 90 días deben solicitar un permiso de
+								residencia antes de que expire su permiso de residencia original. Los solicitantes con
+								Visa de Malta deben comunicarse con el DCEA al menos 30 días y 21 días antes de la fecha
+								de vencimiento de su permiso actual y presentar todos los documentos necesarios,
+								incluida la prueba de asistencia satisfactoria, que debe ser del 75%.</li>
+						</ul>
+						<h2>LISTA DE DOCUMENTOS:</h2>
+						<ul>
+							<li>Formulario de solicitud de Visa en Inglés con la Última foto del Tamaño del pasaporte.
+								Ejemplo de formulario de solicitud de Visa;</li>
+							<li>Un pasaporte válido, cuya expiración implica tres o más meses después de la expiración
+								del término de Visa y la presencia de al menos tres páginas en blanco;</li>
+							<li>Prueba de la disponibilidad de fondos suficientes equivalentes al 75% del salario mínimo
+								en Malta por cada mes de estudio. Eso es aproximadamente € 48 / día o € 17 520 / año. La
+								evidencia de fondos puede incluir Estados de cuenta bancarios de los últimos seis meses,
+								una carta que indique el apoyo financiero del patrocinador (incluida la confirmación de
+								sus fondos), etc.;</li>
+							<li>Billete de avión(s) a su destino final con el viaje de vuelta, en los casos de los
+								cursos a corto plazo;</li>
+							<li>Prueba de alojamiento durante el curso (reserva de hotel, contrato de Alquiler);</li>
+							<li>Carta de patrocinio, incluida una copia del documento de identidad y los datos de
+								contacto del patrocinador si el solicitante está patrocinado por un tercero;</li>
+							<li>Prueba de beca, si corresponde;</li>
+							<li>Los solicitantes de empleo que no aspiran a un título universitario proporcionan una
+								carta de admisión / admisión de una Institución educativa local con licencia de un
+								organismo regulador nacional. Para los programas de enseñanza en Malta por debajo del
+								NIVEL mqf 5 (cualquier cosa que no sea educación superior, por ejemplo, cursos de idioma
+								Inglés), la documentación debe incluir una confirmación de que el estudiante asistirá al
+								menos 15 horas por semana, una copia del horario de clases para cada mes de estudio.
+							</li>
+							<li>Los candidatos que aspiran a un título universitario proporcionan una carta de admisión
+								/ admisión de una Institución educativa local con licencia de un organismo regulador
+								nacional. El documento debe contener evidencia de que 60 horas de crédito bajo el
+								sistema europeo de crédito y transferencia (ESS) serán recibidas por el estudiante
+								dentro de un máximo de un año. La misma proporción se aplicará a otros sistemas de
+								crédito. Los solicitantes proporcionan datos sobre el horario de clases para cada mes de
+								estudio.</li>
+							<li>Prueba de dominio del idioma suficiente para ser elegible para solicitar el curso de
+								estudio elegido;</li>
+							<li>Seguro médico para viajar con una cobertura mínima de 30, 000 euros;</li>
+							<li>Seguro de salud con reembolso completo de un proveedor reconocido. La póliza debe cubrir
+								toda la Duración del curso, no la Duración de la Visa emitida originalmente al
+								solicitante;</li>
+							<li>Certificado de nacimiento / libro de familia, en caso de menores;</li>
+							<li>Permiso de dos padres o tutores legales, en el caso de menores. El documento de
+								autorización debe estar debidamente autenticado. En caso de duda, el Cónsul siempre
+								puede solicitar más información o documentos;</li>
+							<li>Página de datos de pasaporte de ambos padres o tutores legales, en caso de menores;</li>
+							<li>Certificado de matrícula en Malta recibido por la Institución educativa en relación con
+								el curso del solicitante:</li>
+							<li>Para cursos de hasta 1.000 euros, se solicita un recibo que cubra el pago completo;</li>
+							<li>Para los cursos que cuestan más de 1.000 euros pero menos de 2.500 euros, se solicita un
+								recibo que cubra hasta el 75% del curso;</li>
+							<li>Para los cursos cuyo coste sea igual o superior a 2.500 euros, se solicita un recibo que
+								cubra hasta el 50% del curso;</li>
+							<li>Cualquier documento adicional que pueda ser considerado necesario por la oficina
+								consular.</li>
+						</ul>
+						<h2>DERECHO AL TRABAJO</h2>
+						<p>Los solicitantes que tienen un programa de capacitación en Malta que dura más de 90 días
+							pueden obtener un trabajo. Jobsplus (agencia de empleo) proporciona acceso a trabajos en
+							ciertos sectores, solo es necesario registrarse y seleccionar la vacante que le interesa.
+							Los estudiantes no pueden trabajar más de 20 horas a la semana después de los primeros tres
+							meses de estudio en Malta. Estas disposiciones pueden cambiar de vez en cuando a discreción
+							del Ministerio responsable de Jobsplus.</p>
+						<p>Los candidatos que cursan estudios superiores en universidades reconocidas POR mqric son
+							elegibles para trabajar no más de 20 horas por semana desde el primer año. Para hacer esto,
+							el solicitante solicita un permiso de trabajo después de la emisión del permiso de
+							residencia. También se debe tener en cuenta que una solicitud de permiso de trabajo se
+							considerará más favorable si la oferta de trabajo está relacionada con la profesión de
+							capacitación elegida.</p>
+					</div>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Описание</div>
+						<div class="language ua">ua</div>
+					</label>
+					<div class="fs-editor" id="js-text-ua"></div>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Описание</div>
+						<div class="language ru">ru</div>
+					</label>
+					<div class="fs-editor" id="js-text-ru">
+						<p>Итак, вас приняли на учебу на Мальту - поздравляем! И что теперь? Перед тем как упаковать
+							солнцезащитный крем, самое время разобраться с визой и видом на жительство.</p>
+						<h2>ТИПЫ ВИЗ В МАЛЬТУ ДЛЯ ОБУЧЕНИЯ:</h2>
+						<ul>
+							<li>Краткосрочная студенческая виза в Мальту</li>
+						</ul>
+						<p>Выдается для соискателей, желающих пройти<a
+								href="https://tostudy.pro/cities.php?id=16">&nbsp;курсы английского языка&nbsp;</a>либо
+							же другую программу, длительностью не более 90 календарных дней.</p>
+						<p>Граждане стран не входящих в ЕС, посещающие программу продолжительностью не более 90 дней,
+							должны получить шенгенскую краткосрочную визу (C-Visa).</p>
+						<p>Заявителю нужно представить свою заявку в одном из близлежащих консульских отделений.</p>
+						<p>Вместе с заявлением на получения визы на Мальту заявитель предоставляет свои биометрические
+							данные.</p>
+						<p>В случае одобрения, виза на Мальту выдается на всю программу плюс 7-дневный льготный период
+							при условии, что общая сумма не превышает 90 дней.</p>
+						<p>Время рассмотрения Вашего заявления на визу на Мальте, начиная с даты подачи до принятия
+							окончательного решения, не должно превышать 15 рабочих дней.</p>
+						<p>Вышеуказанная процедура, согласно визовому законодательству, не применима к студентам,
+							которые указаны в качестве безвизовых граждан (страны ЕС и США).</p>
+						<ul>
+							<li>Долгосрочная студенческая виза в Мальту.</li>
+						</ul>
+						<p>Долгосрочная виза D необходима студентам с целью обучения на Мальте, &nbsp;длительность
+							которого составляет более 90 календарных дней. Выдается виза на 180 дней с дальнейшим
+							продлением на территории Мальты.</p>
+						<h2>ПРОДЛЕНИЕ ПРЕБЫВАНИЯ</h2>
+						<ul>
+							<li>Во всех случаях, когда курс превышает 90 дней, за исключением программ высшего
+								образования, дальнейшее разрешение на пребывание продлевается по национальной D-визе на
+								максимальный период 365 дней, считается с начальной даты въезда в шенгенскую зону.</li>
+							<li>Соискателям, которым требуется дополнительное разрешение на пребывание, согласно визовым
+								требованиям, нужно связаться с CVU не раньше, чем за 30 дней и не позднее, чем за 21
+								день до истечения термина действительности своей визы, и представить все необходимые
+								документы, включая свидетельство об удовлетворительной успеваемости и посещаемости.</li>
+							<li>Если продолжительность программы обучения превышает 365 дней, и кандидат уже исчерпал
+								срок действия национальной визы, или если его / ее пребывание в Шенгенской зоне уже
+								превысило 365 дней, студенту нужно подать заявление на получение вида на жительство,
+								чтобы продлить пребывание. Кандидаты связываются с отделом IMA (Identity Malta Agency)
+								не ранее 30 дней и не позднее 21 дня до истечения срока действия его / ее визы и
+								представить все необходимые документы, включая доказательства удовлетворительной работы
+								и посещаемости.</li>
+							<li>Соискателям (как определено в Дополнительном законодательстве 217.22), обучающимся по
+								программе высшего образования, продолжительностью более 90 дней, нужно подать заявление
+								на получение вида на жительство до истечения срока их первоначального разрешения на
+								пребывание. Кандидатам, имеющимся на руках визу на Мальте, нужно связаться с DCEA не
+								ранее чем за 30 дней и не позднее чем за 21 день до истечения термина окончания их
+								текущего разрешения и предъявить все необходимые документы, в том числе доказательство
+								удовлетворительной посещаемости, которая должна составлять 75%.</li>
+						</ul>
+						<h2>СПИСОК ДОКУМЕНТОВ:</h2>
+						<ul>
+							<li>Визовая анкета на английском языке с последней фотографией паспортного размера. Пример
+								визовой анкеты;</li>
+							<li>Действительный паспорт, окончание срока которого предполагает три и более месяцев после
+								истечения термина действия визы и наличие не менее трех пустых страниц;</li>
+							<li>Доказательство наличия достаточных финансовых средств, эквивалентных 75% минимальной
+								заработной платы на Мальте на каждый месяц обучения. Это примерно € 48 / день или € 17
+								520 / год. Доказательства финансовых средств может включать банковские выписки за
+								последние шесть месяцев, письмо с указанием финансовой поддержки от спонсора (включая
+								подтверждение их средств) и т. д.;</li>
+							<li>Авиабилет(ы) до конечного пункта назначения с обратной поездкой, в случаях краткосрочных
+								курсах;</li>
+							<li>Доказательства проживания на время курса (бронь отеля, договор аренды);</li>
+							<li>Письмо о спонсорстве, включая копию документа, удостоверяющего личность, и контактные
+								данные спонсора, если заявитель спонсируется третьей стороной;</li>
+							<li>Подтверждение стипендии, если применимо;</li>
+							<li>Соискатели, которые не стремятся получить высшее образование, предоставляют письмо о
+								зачислении / приеме из местного учебного заведения, лицензированного национальным
+								регулирующим органом. Для программ обучения на Мальте ниже уровня MQF 5 (все, что не
+								касается высшего образования, например, языковые курсы английского языка) документация
+								должна включать подтверждение того, что студент будет посещать минимум 15 часов в
+								неделю, копию расписания занятий на каждый месяц обучения.</li>
+							<li>Кандидаты, которые стремятся получить высшее образование, предоставляют письмо о
+								зачислении / приеме из местного учебного заведения, лицензированного национальным
+								регулирующим органом. Документ должен содержать свидетельства того, что 60 кредитных
+								часов по Европейской кредитно-трансферной системе (ЕСТЅ) будут получены студентом в
+								течение максимум одного года. Такая же пропорция будет применяться для других кредитных
+								систем. Заявители предоставляют данные о расписании занятий на каждый месяц обучения.
+							</li>
+							<li>Доказательство достаточного владения языком, чтобы иметь право подать заявку на
+								выбранный курс обучения;</li>
+							<li>Медицинская страховка для путешествий с минимальным покрытием 30 000 евро;</li>
+							<li>Медицинская страховка с полным возмещением от признанного поставщика. Полис должен
+								охватывать всю продолжительность курса, а не срок действия визы, первоначально выданной
+								заявителю;</li>
+							<li>Свидетельство о рождении / семейная книга, в случае несовершеннолетних;</li>
+							<li>Разрешение двух родителей или законных опекунов, в случае несовершеннолетних.
+								Авторизационный документ должен быть надлежащим образом аутентифицирован. В случае
+								каких-либо сомнений Консул всегда может запросить дополнительную информацию или
+								документы;</li>
+							<li>Страница паспортных данных обоих родителей или законных опекунов, в случае
+								несовершеннолетних;</li>
+							<li>Свидетельство об оплате обучения на Мальте, полученной учебным заведением в связи с
+								курсом заявителя:</li>
+							<li>Для курсов стоимостью до 1000 евро запрашивается квитанция, покрывающая полную оплату;
+							</li>
+							<li>Для курсов стоимостью более 1000 евро, но менее 2500 евро запрашивается квитанция,
+								покрывающая до 75% курса;</li>
+							<li>Для курсов, стоимость которых равна или превышает 2500 евро, запрашивается квитанция,
+								покрывающая до 50% курса;</li>
+							<li>Любые дополнительные документы, которые могут быть сочтены необходимыми консульским
+								учреждением.</li>
+						</ul>
+						<h2>ПРАВО НА РАБОТУ</h2>
+						<p>Заявители, которые имеют программу обучения на Мальте, продолжительностью более 90 дней,
+							могут устроиться на работу. Jobsplus (агентство трудоустройства) предоставляет доступ к
+							работе в определенных секторах, необходимо только зарегистрироваться и выбрать интересующую
+							Вас вакансию. Студентам разрешено работать не более 20 часов в неделю после первых трех
+							месяцев обучения на Мальте. Эти положения могут изменяться время от времени по усмотрению
+							Министерства, ответственного за Jobsplus.</p>
+						<p>Кандидаты, получающие высшее обучение в университетах, признанных MQRIC, имеют право на
+							работу не более 20 часов в неделю с первого года обучения. Для этого соискатель подает
+							заявление на получение разрешения на работу после выдачи вида на жительство. Следует также
+							отметить, что заявление на получение разрешения на работу будет считаться более
+							благоприятным, если предложение о работе связано с выбранной профессией обучения.</p>
+					</div>
+				</div>
+
+				<div class="input">
+					<label class="input__label input__label2">
+						<div>Описание</div>
+						<div class="language cn">cn</div>
+					</label>
+					<div class="fs-editor" id="js-text-cn"></div>
+				</div>
+
+				<div class="action">
+					<a href="#" class="button" id="js-info" data-id="36" data-action="edit">Сохранить</a>
+				</div>
+
+			</div> <!-- END class="content" -->
+		</div> <!-- END id="wrap-content" -->
+
+
+		<form id="upload" method="post" action="./handlers_a/upload.php" enctype="multipart/form-data">
+			<input type="file" name="files" id="photoupload" class="js-form" />
+		</form>
+
+		<footer id="footer">© Панель управления</footer>
+
+	</section> <!-- END id="main" -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="./js/jquery.ui.widget.js"></script>
+	<script src="./js/jquery.iframe-transport.js"></script>
+	<script src="./js/jquery.fileupload.js"></script>
+	<script src="./js/froala_editor.min.js"></script>
+	<script src="./js/plugins/draggable.min.js"></script>
+	<script src="./js/plugins/image.min.js"></script>
+	<script src="./js/plugins/link.min.js"></script>
+	<script src="./js/plugins/line_breaker.min.js"></script>
+	<script src="./js/plugins/lists.min.js"></script>
+	<script src="./js/plugins/paragraph_format.min.js"></script>
+	<script src="./js/plugins/entities.min.js"></script>
+	<script src="./js/plugins/quick_insert.min.js"></script>
+	<script src="./js/plugins/video.min.js"></script>
+	<script src="./js/ru.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>tostudy | Панель управления</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" /> -->
+	<link rel="stylesheet" href="./css/datatables.css" />
+</head>
+
+<body id="page">
+	<section id="main">
+		<header id="header">
+			<div class="container">
+				<div class="column">
+					<div class="bars">
+						<span class="lines"></span>
+						<div class="navbar js-navbar">
+							<a href="./index.html">Забронировали курс</a>
+							<a href="./feedback.html">Обратная связь</a>
+							<a href="./languages.html">Языки</a>
+							<a href="./countries.html">Страны</a>
+							<a href="./cities.html">Города</a>
+							<a href="./schools.html">Школы</a>
+							<a href="./courses.html">Курсы</a>
+							<a href="./accommodation.html">Жилье</a>
+							<a href="./info.html">Полезная информация</a>
+							<a href="./news.html">Новости</a>
+							<a href="./reviews.html">Отзывы о сервисе</a>
+							<a href="./faq.html">Вопросы-ответы</a>
+							<a href="./partners.html">С нами работают</a>
+							<a href="./pages.html">Страницы</a>
+							<a href="./settings.html">Настройки</a>
+						</div>
+					</div>
+				</div> <!-- /.column -->
+				<div class="column">
+					<a href="https://tostudy.pro/" class="link get-site">Перейти на сайт</a>
+					<a href="./exit.php" class="link">Выйти</a>
+				</div> <!-- /.column -->
+			</div>
+		</header> <!-- END id="header" -->
+
+		<div id="wrap-content">
+			<div class="header">
+				<h1>Забронировали курс</h1>
+			</div>
+			<div id="content">
+				<table id="js-data-table" class="data-table js-table0">
+					<thead class="head">
+						<tr>
+							<th class="column">ID заявки</th>
+							<th class="column">Имя</th>
+							<th class="column">Email</th>
+							<th class="column">Телефон</th>
+							<th class="column">Комментарий</th>
+							<th class="column">Дата добавления</th>
+							<th class="column">Статус</th>
+							<th class="column">Просмотр</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="js-item21">
+							<td class="column">21</td>
+							<td class="column">Андрей</td>
+							<td class="column">borzu@yandex.ru</td>
+							<td class="column">567567656534</td>
+							<td class="column">test</td>
+							<td class="column" data-order="2019-07-01 09:09:04">1 июля в 09:09</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>завершен</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="1" data-id="21"
+											data-action="orders">ожидание</a>
+										<a href="#" class="js-status" data-status="2" data-id="21"
+											data-action="orders">в обработке</a>
+										<a href="#" class="js-status" data-status="3" data-id="21"
+											data-action="orders">завершен</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-view" data-id="21">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<g transform="translate(0.000000,290.000000) scale(0.100000,-0.100000)">
+											<path
+												d="M4336.6,676.3c-629.4-87.4-1120.8-242.8-1664.7-520.6c-602.2-310.8-858.6-518.7-1820.1-1482.1L100-2082.1l819.7-815.8c924.6-918.8,1085.9-1054.8,1594.8-1346.2c1243.2-716.8,2799.2-856.7,4170.6-378.8c561.4,194.2,1070.3,481.7,1544.3,874.1c106.8,87.4,526.4,493.4,932.4,899.4l738.2,740.1l-747.9,749.8c-411.8,411.8-833.3,819.7-940.2,907.2C7514.6,128.5,6718.2,493.7,5803.2,653C5490.5,705.4,4643.5,721,4336.6,676.3z M5572.1,348c646.9-85.5,1237.4-283.6,1781.3-602.2c446.8-260.3,641-423.5,1390.8-1169.4l689.6-683.8l-602.2-606.1c-330.2-332.2-685.7-674.1-786.7-759.5c-557.5-468.1-1198.5-792.5-1907.5-965.4c-406-99.1-641-126.3-1103.3-126.3c-441-2-627.4,17.5-1019.8,99.1c-724.6,151.5-1491.9,530.3-2059.1,1021.8c-116.5,101-477.9,450.7-802.3,775.1l-586.6,590.5l683.8,679.9c701.2,697.4,880,850.8,1258.7,1085.9c545.8,338,1287.9,596.4,1913.4,666.3C4684.3,384.9,5319.6,381.1,5572.1,348z" />
+											<path
+												d="M4703.8,45c-699.3-91.3-1361.7-578.9-1660.8-1227.7c-371-804.2-219.5-1738.6,388.5-2381.5c922.7-977.1,2490.3-881.9,3296.5,200.1c310.8,415.7,462.3,969.3,407.9,1482.1C7007.6-660.1,5917.8,202.3,4703.8,45z M5070.9-953.5c58.3-29.1,95.2-106.8,83.5-176.8c-11.7-77.7-81.6-118.5-240.9-139.9c-406-54.4-683.8-332.2-738.2-738.2c-25.2-176.8-66-237-163.2-237c-91.3,0-122.4,17.5-155.4,83.5c-23.3,42.7-27.2,85.5-17.5,167.1c68,600.2,530.3,1035.4,1132.5,1068.4C4997.1-926.3,5041.8-937.9,5070.9-953.5z" />
+										</g>
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr id="js-item22">
+							<td class="column">22</td>
+							<td class="column">3</td>
+							<td class="column">winwineas@gmail.com</td>
+							<td class="column">3</td>
+							<td class="column">hfhfh</td>
+							<td class="column" data-order="2019-07-12 19:19:11">12 июля в 19:19</td>
+							<td class="column" data-order="3">
+								<div class="select ok js-open-form-select js-open-status">
+									<span>завершен</span>
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.65656 5.69492L9.69697 1.72882C10.101 1.32204 10.101 0.711867 9.69697 0.305087C9.29293 -0.101693 8.68687 -0.101693 8.28283 0.305087L4.94949 3.55932L1.71717 0.305085C1.31313 -0.101695 0.70707 -0.101695 0.30303 0.305085C0.101009 0.508475 -1.11131e-07 0.711864 -1.77809e-07 1.01695C-2.22261e-07 1.22034 0.101009 1.52542 0.303029 1.72881L4.34343 5.69492C4.64646 6.1017 5.35353 6.1017 5.65656 5.69492Z"
+											fill="#4d4d4d"></path>
+									</svg>
+									<div class="options options2 js-form-select">
+										<a href="#" class="js-status" data-status="1" data-id="22"
+											data-action="orders">ожидание</a>
+										<a href="#" class="js-status" data-status="2" data-id="22"
+											data-action="orders">в обработке</a>
+										<a href="#" class="js-status" data-status="3" data-id="22"
+											data-action="orders">завершен</a>
+									</div>
+								</div>
+							</td>
+							<td class="column">
+								<a href="#" class="icon2 js-view" data-id="22">
+									<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000">
+										<g transform="translate(0.000000,290.000000) scale(0.100000,-0.100000)">
+											<path
+												d="M4336.6,676.3c-629.4-87.4-1120.8-242.8-1664.7-520.6c-602.2-310.8-858.6-518.7-1820.1-1482.1L100-2082.1l819.7-815.8c924.6-918.8,1085.9-1054.8,1594.8-1346.2c1243.2-716.8,2799.2-856.7,4170.6-378.8c561.4,194.2,1070.3,481.7,1544.3,874.1c106.8,87.4,526.4,493.4,932.4,899.4l738.2,740.1l-747.9,749.8c-411.8,411.8-833.3,819.7-940.2,907.2C7514.6,128.5,6718.2,493.7,5803.2,653C5490.5,705.4,4643.5,721,4336.6,676.3z M5572.1,348c646.9-85.5,1237.4-283.6,1781.3-602.2c446.8-260.3,641-423.5,1390.8-1169.4l689.6-683.8l-602.2-606.1c-330.2-332.2-685.7-674.1-786.7-759.5c-557.5-468.1-1198.5-792.5-1907.5-965.4c-406-99.1-641-126.3-1103.3-126.3c-441-2-627.4,17.5-1019.8,99.1c-724.6,151.5-1491.9,530.3-2059.1,1021.8c-116.5,101-477.9,450.7-802.3,775.1l-586.6,590.5l683.8,679.9c701.2,697.4,880,850.8,1258.7,1085.9c545.8,338,1287.9,596.4,1913.4,666.3C4684.3,384.9,5319.6,381.1,5572.1,348z" />
+											<path
+												d="M4703.8,45c-699.3-91.3-1361.7-578.9-1660.8-1227.7c-371-804.2-219.5-1738.6,388.5-2381.5c922.7-977.1,2490.3-881.9,3296.5,200.1c310.8,415.7,462.3,969.3,407.9,1482.1C7007.6-660.1,5917.8,202.3,4703.8,45z M5070.9-953.5c58.3-29.1,95.2-106.8,83.5-176.8c-11.7-77.7-81.6-118.5-240.9-139.9c-406-54.4-683.8-332.2-738.2-738.2c-25.2-176.8-66-237-163.2-237c-91.3,0-122.4,17.5-155.4,83.5c-23.3,42.7-27.2,85.5-17.5,167.1c68,600.2,530.3,1035.4,1132.5,1068.4C4997.1-926.3,5041.8-937.9,5070.9-953.5z" />
+										</g>
+									</svg>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- /#content -->
+		</div> <!-- /#wrap-content -->
+
+		<div id="js-modal-booking" class="fs-box fs-box1">
+			<section>
+				<div class="fs-form modal-cart js-form">
+					<header class="header">
+						<h3>Забронированный курс</h3>
+						<i class="fa fa-close fs-close js-close" data-modal-id="#js-modal-booking"></i>
+					</header>
+					<ul id="js-booking"></ul>
+				</div>
+			</section>
+		</div> <!-- END id="js-modal-cart" -->
+
+		<footer id="footer">© Панель управления</footer>
+
+	</section> <!-- END id="main" -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="./js/datatables.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
